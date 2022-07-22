@@ -26,4 +26,26 @@ for row in 0..<8 where row % 2 == 1 {
 		}
 }
 print(sum)
+/*
+ Mini-exercises
+ 1. Write a switch statement that takes an age as an integer and prints out the life stage related to that age. You can make up the life stages or use my categorization: 0-2 years, Infant; 3-12 years, Child; 13-19 years, Teenager; 20-39, Adult; 40-60, Middle-aged; 61+, Elderly.
+ */
+let age = 70
+
+switch age{
+case 0...2:
+		print("Infant")
+case 3...12:
+		print("child")
+case 13...19:
+		print("Teenager")
+case 20...39:
+		print("Adult")
+case 40...60:
+		print("middle-age")
+case _ where age > 61:
+		print("elderly")
+default:
+		print("WTF")
+}
 
