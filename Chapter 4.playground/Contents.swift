@@ -48,4 +48,13 @@ case _ where age > 61:
 default:
 		print("WTF")
 }
+/*
+ 2. Write a switch statement that takes a tuple containing a string and an integer. The string is a name, and the integer is an age. Use the same cases you used in the previous exercise and let syntax to print out the name followed by the life stage. For example, for myself, it would print out "Matt is an adult.".
+ */
+let tupless = ("Adam", 40)
 
+switch tupless {
+case (let name, let age):
+		print("my name is \(name) and I'm \(age)")
+
+}
