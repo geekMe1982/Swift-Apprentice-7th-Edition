@@ -58,3 +58,54 @@ case (let name, let age):
 		print("my name is \(name) and I'm \(age)")
 
 }
+/*
+ Challenges
+
+ Challenge 1: How many times
+ In the following for loop, what will be the value of sum, and how many iterations will happen?
+ var sum = 0
+ for i in 0...5 {
+ sum += i }
+ answer: six times
+ */
+/*
+ Challenge 2: Count the letter
+ In the while loop below, how many instances of “a” will there be in aLotOfAs? Hint: aLotOfAs.count tells you how many characters are in the string aLotOfAs.
+ var aLotOfAs = ""
+ while aLotOfAs.count < 10 {
+	 aLotOfAs += "a"
+ }
+ answer: 10 times
+ */
+/*
+ Challenge 3: What will print
+ 1- ("On the x/y plane")
+ 2-("x = y = z")
+ 3-("On the x/z plane")
+ 4-("Nothing special")
+ 5-("On the y/z plane")
+ */
+/*
+ Challenge 4: Closed range size
+ A closed range can never be empty. Why?
+ answers: because it must end with a value as well as start with a value even if 0
+ */
+/*
+ Challenge 5: The final countdown
+ */
+
+for i in 0...10 {
+	print(10 - i)
+}
+/*
+ Challenge 6: Print a sequence
+ Print 0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0. (Note: do not use the stride(from:by:to:) function, which will be introduced later.)
+ */
+var value = 0.0
+
+for _ in 0...10 {
+	print(value)
+	value += 0.1
+}
+
+
