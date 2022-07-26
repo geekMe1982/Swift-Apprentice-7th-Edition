@@ -51,18 +51,23 @@ var middleName: String? = nil
  */
 
 func divideIfWhole(_ value: Int, by divisor: Int) -> Int? {
-		
+
 		if value % divisor == 0 {
-				print("Yep, it divides \(value / divisor) times")
+				return value / divisor
 		} else {
-				print("Not divisible :[.")
+				return nil
 		}
-		return nil
 }
+
 divideIfWhole(10, by: 2)
 
 if let answer = divideIfWhole(10, by: 2) {
-		print("\(answer)")
+		print("it divides \(answer) times")
 } else {
-		
+		print("Not divisible :[.")
+
 }
+
+var answer1 = divideIfWhole(10, by: 2) ?? 0
+print("It divides \(answer1) times.")
+
