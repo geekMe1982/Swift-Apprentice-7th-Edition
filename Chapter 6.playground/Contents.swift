@@ -71,3 +71,31 @@ if let answer = divideIfWhole(10, by: 2) {
 var answer1 = divideIfWhole(10, by: 2) ?? 0
 print("It divides \(answer1) times.")
 
+
+let number: Int??? = 10
+//let number: Int??? = nil
+
+//1- force unwrap
+//var force = number!
+//print("number force unwrapped is \(force)")
+
+//2- Optional binding
+if let optionalBinding = number {
+		print("optional binding result \(optionalBinding)")
+} else {
+		print("nothing")
+}
+
+// Write a function printNumber(_ number: Int???) that uses guard to print the number only if it is bound.
+
+func printNumber(_ number: Int???) {
+		guard let numero = number else {
+				print("nothing")
+				return
+		}
+		print(numero!)
+}
+
+printNumber(nil)
+
+
